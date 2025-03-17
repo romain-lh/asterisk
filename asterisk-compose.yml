@@ -1,10 +1,10 @@
 ---
 - name: Déployer et démarrer Asterisk en mode console
-  hosts: asterisk_servers
+  hosts: asterisk_servers #ip de votre machine client
   become: yes
 
   tasks:
-    - name: Mettre à jour la liste des paquets et le système
+    - name: Mettre à jour votre système d'exploitation
       apt:
         update_cache: yes
         upgrade: dist
@@ -40,7 +40,7 @@
         url: "https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-18-current.tar.gz"
         dest: /tmp/asterisk.tar.gz
 
-    - name: Extraire l'archive Asterisk avec tar
+    - name: extration du fichier tar
       shell: |
         tar --strip-components=1 -xzf /tmp/asterisk.tar.gz -C /opt/asterisk_src/
       args:
