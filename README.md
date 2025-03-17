@@ -1,6 +1,7 @@
 # asterisk
 
 Une fois ansible configurer nous allons effetuer un clone, pour ce faire nous allons utiliser la commande suivante : 
+
 ``` git clone https://github.com/romain-lh/asterisk``` 
 
 une fois le git clone effetuer il suffit de lancer asterisk-compose.yml avec la commande : 
