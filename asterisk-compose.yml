@@ -1,6 +1,6 @@
 ---
 - name: Déployer et démarrer Asterisk en mode console
-  hosts: asterisk_servers #ip de votre machine client
+  hosts: ip de votre machine client 
   become: yes
 
   tasks:
